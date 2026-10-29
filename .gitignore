@@ -23,8 +23,6 @@ config_local.py
 .DS_Store
 Thumbs.db
 
-# Jupyter notebooks (not used in this project)
-*.ipynb
-
-# Large dataset files - do not commit raw CSV to GitHub
-# dataset/*.csv
+# Large / temporary files
+*.log
+*.tmp
