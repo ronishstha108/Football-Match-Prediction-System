@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Trained model file (can be regenerated)
+ml/model.pkl
+
+# Environment and secrets
+.env
+config_local.py
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks (not used in this project)
+*.ipynb
+
+# Large dataset files - do not commit raw CSV to GitHub
+# dataset/*.csv

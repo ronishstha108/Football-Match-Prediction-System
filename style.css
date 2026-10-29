@@ -1,0 +1,470 @@
+/* ===== GENERAL RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #0a1520;
+  border-bottom: 2px solid #1db954;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #cccccc;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* Login button in the navbar */
+.btn-login {
+  background-color: #1db954;
+  color: #0d1b2a !important;
+  padding: 7px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s !important;
+}
+
+.btn-login:hover {
+  background-color: #17a348 !important;
+}
+
+/* Hamburger button for mobile */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 40px;
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #aabbcc;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Primary and secondary buttons */
+.btn-primary {
+  background-color: #1db954;
+  color: #0d1b2a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #17a348;
+}
+
+.btn-secondary {
+  border: 2px solid #1db954;
+  color: #1db954;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #1db954;
+  color: #0d1b2a;
+}
+
+/* ===== FOOTBALL PITCH ILLUSTRATION ===== */
+.hero-visual {
+  flex-shrink: 0;
+}
+
+.pitch {
+  position: relative;
+  width: 280px;
+  height: 190px;
+  background-color: #155724;
+  border: 3px solid #a0c878;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Center line */
+.center-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+}
+
+/* Center circle */
+.center-circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Goal boxes */
+.goal {
+  position: absolute;
+  width: 28px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.goal-left {
+  left: 0;
+  border-left: none;
+}
+
+.goal-right {
+  right: 0;
+  border-right: none;
+}
+
+/* Football emoji */
+.ball {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== SAMPLE PREDICTION CARD ===== */
+.prediction-demo {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #0a1520;
+}
+
+.prediction-demo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1db954;
+}
+
+.section-subtitle {
+  color: #aabbcc;
+  margin-bottom: 36px;
+  font-size: 0.95rem;
+}
+
+.match-card {
+  max-width: 540px;
+  margin: 0 auto;
+  background-color: #112233;
+  border: 1px solid #1db954;
+  border-radius: 10px;
+  padding: 28px 32px;
+  text-align: left;
+}
+
+.match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.team {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.vs {
+  font-size: 1rem;
+  color: #aabbcc;
+}
+
+/* Probability bars */
+.probabilities {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.prob-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prob-label {
+  width: 120px;
+  font-size: 0.9rem;
+  color: #ccddee;
+  flex-shrink: 0;
+}
+
+.prob-bar-wrapper {
+  flex: 1;
+  background-color: #1c2e40;
+  border-radius: 4px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.prob-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.prob-bar.home  { background-color: #1db954; }
+.prob-bar.draw  { background-color: #f0a500; }
+.prob-bar.away  { background-color: #e05252; }
+
+.prob-value {
+  width: 36px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #88aacc;
+  border-top: 1px solid #1c2e40;
+  padding-top: 14px;
+  margin-top: 4px;
+}
+
+/* ===== FEATURES SECTION ===== */
+.features {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #1db954;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.feature-card {
+  background-color: #112233;
+  border: 1px solid #1c3050;
+  border-radius: 10px;
+  padding: 28px 24px;
+  max-width: 260px;
+  text-align: left;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+  border-color: #1db954;
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: #aabbcc;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 60px 40px;
+  background-color: #0a1520;
+}
+
+.about-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1db954;
+}
+
+.about p {
+  color: #aabbcc;
+  margin-bottom: 14px;
+  font-size: 0.97rem;
+}
+
+.about strong {
+  color: #ffffff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #060e18;
+  text-align: center;
+  padding: 28px 20px;
+  border-top: 2px solid #1c2e40;
+}
+
+.footer-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1db954;
+  margin-bottom: 6px;
+}
+
+.footer-desc {
+  font-size: 0.85rem;
+  color: #aabbcc;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #667788;
+}
+
+/* ===== RESPONSIVE: MOBILE SCREENS ===== */
+@media (max-width: 768px) {
+  /* Stack hero vertically on small screens */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Shrink pitch on mobile */
+  .pitch {
+    width: 220px;
+    height: 150px;
+  }
+
+  /* Show hamburger, hide normal nav links */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    background-color: #0a1520;
+    padding: 16px 24px;
+    gap: 16px;
+    border-bottom: 2px solid #1db954;
+  }
+
+  /* When hamburger is clicked, this class is added by script.js */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+    position: relative;
+  }
+
+  .prediction-demo,
+  .features,
+  .about {
+    padding: 40px 20px;
+  }
+}

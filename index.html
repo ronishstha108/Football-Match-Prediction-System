@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Match Prediction System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav class="navbar">
+    <div class="nav-brand">⚽ Football Match Prediction</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#" class="btn-login">Login</a></li>
+    </ul>
+    <!-- Hamburger icon for mobile -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Predict the Game.<br />Understand the Outcome.</h1>
+      <p>
+        This system analyzes historical LaLiga match statistics to estimate
+        possible match outcomes using Logistic Regression.
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn-primary">Explore Features</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Simple football pitch illustration using CSS/HTML only -->
+    <div class="hero-visual">
+      <div class="pitch">
+        <div class="center-circle"></div>
+        <div class="center-line"></div>
+        <div class="goal goal-left"></div>
+        <div class="goal goal-right"></div>
+        <div class="ball">⚽</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SAMPLE PREDICTION CARD ===== -->
+  <section class="prediction-demo">
+    <h2>Sample Prediction Preview</h2>
+    <p class="section-subtitle">Here is what a prediction result looks like.</p>
+
+    <div class="match-card">
+      <div class="match-teams">
+        <span class="team">Barcelona</span>
+        <span class="vs">vs</span>
+        <span class="team">Sevilla</span>
+      </div>
+
+      <div class="probabilities">
+        <div class="prob-item">
+          <span class="prob-label">Barcelona Win</span>
+          <div class="prob-bar-wrapper">
+            <div class="prob-bar home" style="width: 58%;"></div>
+          </div>
+          <span class="prob-value">58%</span>
+        </div>
+
+        <div class="prob-item">
+          <span class="prob-label">Draw</span>
+          <div class="prob-bar-wrapper">
+            <div class="prob-bar draw" style="width: 22%;"></div>
+          </div>
+          <span class="prob-value">22%</span>
+        </div>
+
+        <div class="prob-item">
+          <span class="prob-label">Sevilla Win</span>
+          <div class="prob-bar-wrapper">
+            <div class="prob-bar away" style="width: 20%;"></div>
+          </div>
+          <span class="prob-value">20%</span>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        ⚠️ These are demonstration values only and are not actual model predictions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="features" id="features">
+    <h2>Planned Features</h2>
+    <p class="section-subtitle">What this system will be able to do.</p>
+
+    <div class="feature-cards">
+
+      <div class="feature-card">
+        <div class="feature-icon">🔮</div>
+        <h3>Match Prediction</h3>
+        <p>Estimate match outcomes using historical LaLiga match data and a Logistic Regression model.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Team Statistics</h3>
+        <p>View relevant team statistics such as goals, passes, fouls, and corners from past matches.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>Prediction History</h3>
+        <p>View previous predictions and compare them with actual match results to evaluate accuracy.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About This Project</h2>
+      <p>
+        This is an academic project developed as part of the Bachelor of Computer
+        Applications (BCA) program at Tribhuvan University, Nepal.
+      </p>
+      <p>
+        The goal is to build a system that predicts LaLiga football match outcomes
+        using historical match data and a machine learning algorithm called
+        <strong>Logistic Regression</strong>.
+      </p>
+      <p>
+        This project is developed in stages. The current stage shows only the
+        landing page. The prediction system, database, and backend will be added
+        in later stages.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p class="footer-title">⚽ Football Match Prediction System</p>
+    <p class="footer-desc">
+      An academic BCA project — Tribhuvan University, Nepal
+    </p>
+    <p class="footer-copy">&copy; 2026 Football Match Prediction System. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
